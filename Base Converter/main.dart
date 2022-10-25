@@ -3,8 +3,8 @@ import 'functions.dart';
 import 'octal.dart';
 
 main() {
-  // String bin = "1010.101011";
-  int base = 8;
+  // String bin = "11100.1101";
+  int base = 10;
   // print("Binary to other number system");
   // if (searchFunction(bin, '.')) {
   //   print(binaryFraction(bin, base));
@@ -12,8 +12,8 @@ main() {
   //   print(binaryToOtherSystem(bin, base));
   // }
 
-  String oct = '52.123423';
-  base = 2;
+  String oct = '34.64';
+  base = 16;
   print("Octal to other number system");
   if (searchFunction(oct, '.')) {
     print(octalFraction(oct, base));

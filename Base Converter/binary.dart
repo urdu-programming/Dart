@@ -6,6 +6,8 @@ String binaryToOtherSystem(String binary, int base) {
   int decimal_of_binary = int.parse('$binary', radix: 2);
   if (base == 8)
     return decimal_of_binary.toRadixString(8);
+  else if (base == 2)
+    return binary;
   else if (base == 16) return decimal_of_binary.toRadixString(16).toUpperCase();
   return decimal_of_binary.toString();
 }
@@ -23,7 +25,9 @@ String binaryFraction(String binary, int base) {
         num = pow(1 / 2, i) + num;
       }
     }
-  } else if (base == 8) {
+  } else if (base == 2)
+    return binary;
+  else if (base == 8) {
     String octa = "";
     binaryFraction = octalMaker(binaryFraction);
     for (int i = 0; i < binaryFraction.length; i += 3) {
