@@ -1,19 +1,25 @@
 import 'binary.dart';
 import 'functions.dart';
+import 'octal.dart';
 
 main() {
-  String bin = "101010.1011011";
-  int base = 10;
-  print("Binary to other number system");
-  if (searchFunction(bin, '.')) {
-    print(binaryFraction(bin, base));
+  // String bin = "1010.101011";
+  int base = 8;
+  // print("Binary to other number system");
+  // if (searchFunction(bin, '.')) {
+  //   print(binaryFraction(bin, base));
+  // } else {
+  //   print(binaryToOtherSystem(bin, base));
+  // }
+
+  String oct = '52.123423';
+  base = 2;
+  print("Octal to other number system");
+  if (searchFunction(oct, '.')) {
+    print(octalFraction(oct, base));
   } else {
-    print(binaryToOtherSystem(bin, base));
+    print(octalToOtherSystem(oct, base));
   }
-  // String oct = '52';
-  // base = 10;
-  // print("Octal to other number system");
-  // print(octalToOtherSystem(oct, base));
 
   // int dec = 10;
   // base = 16;
